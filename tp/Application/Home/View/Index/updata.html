@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>修改数据</title>
+	<style type="text/css">
+		div{margin-top:15px;}
+	</style>
+</head>
+<body>
+<form action="__APP__/Home/Index/doUpdateData" method="post">
+	<div>用户名：<input type="text" name="name" value="{$data.name}" /></div>
+	<div>Q　　Q：<input type="text" name="qq" value="{$data.qq}"/></div>
+	<input type="hidden" value="{$data.id}" name="id"/>
+	<div>　　　<input type="submit" value="确认修改"/></div>
+</form>
+<div><a href="__APP__/Home/Index/index">返回首页</a></div>
+</body>
+</html>

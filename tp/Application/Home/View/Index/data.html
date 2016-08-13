@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>查询数据</title>
+	<style type="text/css">
+		div{border-bottom:1px gray solid;margin:15px 0px; padding:15px 0px;}
+		span{color:red; font-weight: bold;}
+	</style>
+</head>
+<body>
+<div>关于“<span>【{$ci}】</span>”的查询结果如下所示：</div>
+<volist name="data" id="a">
+<div>{$a.id} <b>{$a.name}</b> {$a.qq} &nbsp;&nbsp;&nbsp;<a href="__APP__/Home/Index/updateData?id={$a.id}">修改</a> | <a href="__APP__/Home/Index/deleteData?id={$a.id}"><span style="color:gray; font-weight: normal;">删除</span></a>
+ </div>
+</volist>
+
+<a href="__APP__/Home/Index/index">返回首页</a>
+</body>
+</html>

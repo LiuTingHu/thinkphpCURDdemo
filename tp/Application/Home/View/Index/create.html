@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首页</title>
+	<style type="text/css">
+	div{margin-top:15px;}
+	.div{border-bottom:1px gray solid;margin:15px 0px; padding:15px 0px;}
+	</style>
+</head>
+<body>
+<form action="__APP__/Home/Index/doCreateData" method="post">
+	<div>用户名：<input type="text" name="name" /></div>
+	<div>Q　　Q：<input type="text" name="qq"/></div>
+	<div>　　　<input type="submit" value="添加数据"/></div>
+</form>
+<div class="div"><b>【所有数据】</b></div>
+<volist name="data" id="a">
+<div class="div">{$a.id}. {$a.name} {$a.qq} <a href="__APP__/Home/Index/updateData?id={$a.id}">修改</a> | <a href="__APP__/Home/Index/deleteData?id={$a.id}"><span style="color:gray;">删除</span></a></div>
+</volist>
+<div class="div"><b>【查询数据】</b></div>
+<form action="__APP__/Home/Index/selectData" method="post">
+	<input type="text" name="ci" placeholder="请输入名称"/>
+	<input type="submit" value="查询"/>
+</form>
+</body>
+</html>
