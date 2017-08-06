@@ -1,3 +1,3 @@
-1. ÔöÉ¾¸Ä²éÑİÊ¾µØÖ·£ºindex.php/Home/Index/index.html
+1. å¢åˆ æ”¹æŸ¥æ¼”ç¤ºåœ°å€ï¼šindex.php/Home/Index/index.html
 
-2. .sqlÎÄ¼şÎªÓÃµ½µÄÊı¾İ±í
+2. sqlæ–‡ä»¶ä¸ºç”¨åˆ°çš„æ•°æ®è¡¨
